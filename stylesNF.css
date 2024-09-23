@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+
+.container {
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#networkContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.node {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    transition: all 0.8s ease;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:active {
+    background-color: #1f618d;
+}
+
+footer {
+    margin-top: 100px;
+}
+  
+footer p {
+    text-align: center;
+    color: rgb(123, 123, 140);
+}
+
+/* Navigation at top */ 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+  
+
+/* Media Queries for Responsiveness */
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    nav {
+      grid-template-columns: 100%; /* Stack elements */
+      padding: 5%;
+    }
+  
+    nav .header_right .algos {
+      grid-template-columns: repeat(2, 50%);
+      padding: 5% 0;
+    }
+    
+    section {
+      grid-template-columns: 100%;
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 481px) and (max-width: 1250px) {
+    nav {
+      grid-template-columns: 40% 50%;
+    }
+  
+    nav .header_right .algos {
+      grid-template-columns: repeat(3, 33.33333%);
+    }
+    
+    section {
+      grid-template-columns: 10% 80% 10%;
+    }
+  }
+  
+  /* Laptops and desktops */
+  @media (min-width: 1251px) {
+    nav {
+      grid-template-columns: 30% 60%;
+    }
+  
+    section {
+      grid-template-columns: 20% 60% 20%;
+    }
+  }

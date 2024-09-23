@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Flow Sorting Visualization</title>
+    <link rel="stylesheet" href="stylesNF.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="G:\WebD\Sorting Visualizer\Algorithm\Algorithms.html">Algorithms</a></li>
+        <li><a href="G:\WebD\Sorting Visualizer\index.html">Visualizer </a></li>
+    </ul>
+
+    <header style="top: 0%;">
+        <div class="container">
+            <h1>Sorting Algorithm Visualization - Network Flow</h1>
+            <div class="controls">
+                <label for="speedRange">Speed: <span id="speedValue">500</span> ms</label>
+                <input type="range" id="speedRange" min="100" max="2000" value="500" step="100">
+                <br>
+                <label for="arraySizeRange">Array Size: <span id="arraySizeValue">10</span></label>
+                <input type="range" id="arraySizeRange" min="5" max="30" value="10">
+            </div>
+            <div class="buttons">
+                <button id="bubbleSortButton">Bubble Sort</button>
+                <button id="selectionSortButton">Selection Sort</button>
+                <button id="insertionSortButton">Insertion Sort</button>
+                <button id="mergeSortButton">Merge Sort</button>
+                <button id="quickSortButton">Quick Sort</button>
+                <button id="heapSortButton">Heap Sort</button>
+            </div>
+    </header>
+        <div class="container">
+            <div id="networkContainer"></div>
+        </div>
+
+        <footer>
+            <h6><p>&#169; 2024 Raghav Gupta. All rights reserved.</p></h6>
+        </footer>
+    
+    <script src="scriptNF.js"></script>
+</body>
+</html>
