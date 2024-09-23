@@ -19,19 +19,16 @@ A web application showcasing the inner workings of sorting algorithms, complete 
     - **Red**: Element identified as in the incorrect position and to be moved
     - **Green**: Element in the correct position
     
-    ![Color Representation](path_to_image_1.png)
+    ![Color Representation]([path_to_image_1.png](https://github.com/raghavg2004/Sorting-Visualizer/blob/main/img/1.png))
     
 2. **User Controls for Visualization:**
    - **Speed Control**: Adjust the speed of the sorting visualization (5 speed levels).
    - **Data Size Control**: Change the number of elements being sorted.
    - **New Data Generation**: Randomly generate a new dataset.
    
-   ![Control Panel](path_to_image_2.png)
-   
 3. **Real-Time Complexity Display:**
    - Time and space complexity of the currently selected algorithm are displayed.
-   
-   ![Complexity Display](path_to_image_3.png)
+   - 
 
 ## Network Flow Sorting Visualizer:
 An additional page that visualizes sorting algorithms as a network flow, showing how data is passed and transformed during the sorting process.
