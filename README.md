@@ -52,8 +52,5 @@ Each sorting algorithm has its own detailed page where you can:
 
 ---
 
-## Contributing
-Feel free to submit issues or pull requests to help improve this project.
-
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
