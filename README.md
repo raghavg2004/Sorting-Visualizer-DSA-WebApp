@@ -19,21 +19,22 @@ A web application showcasing the inner workings of sorting algorithms, complete 
     - **Red**: Element identified as in the incorrect position and to be moved
     - **Green**: Element in the correct position
     
-    ![Color Representation]([path_to_image_1.png](https://github.com/raghavg2004/Sorting-Visualizer/blob/main/img/1.png))
+    ![Color Representation](https://github.com/raghavg2004/Sorting-Visualizer/blob/main/img/1.png)
     
 2. **User Controls for Visualization:**
    - **Speed Control**: Adjust the speed of the sorting visualization (5 speed levels).
    - **Data Size Control**: Change the number of elements being sorted.
    - **New Data Generation**: Randomly generate a new dataset.
    
+   
 3. **Real-Time Complexity Display:**
    - Time and space complexity of the currently selected algorithm are displayed.
-   - 
+   
 
 ## Network Flow Sorting Visualizer:
 An additional page that visualizes sorting algorithms as a network flow, showing how data is passed and transformed during the sorting process.
 
-![Network Flow](path_to_image_4.png)
+![Network Flow](https://github.com/raghavg2004/Sorting-Visualizer/blob/main/img/2.png)
 
 ## Algorithm Pages:
 Each sorting algorithm has its own detailed page where you can:
@@ -41,7 +42,7 @@ Each sorting algorithm has its own detailed page where you can:
 - **View its code**: Written in multiple languages like C, C++, Java, Python, and JavaScript.
 - **Explore its complexity**: Time and space complexity analysis.
 
-![Algorithm Page](path_to_image_5.png)
+![Algorithm Page](https://github.com/raghavg2004/Sorting-Visualizer/blob/main/img/3..png)
 
 ## How to Use:
 1. Select a sorting algorithm from the dropdown menu.
