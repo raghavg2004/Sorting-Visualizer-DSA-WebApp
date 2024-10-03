@@ -44,6 +44,13 @@ Each sorting algorithm has its own detailed page where you can:
 
 ![Algorithm Page](https://github.com/raghavg2004/Sorting-Visualizer/blob/main/img/3..png)
 
+## Installation
+
+1. Clone the repository to your local machine:
+    ```bash
+    git clone https://github.com/raghavg2004/Sorting-Visualizer.git
+    ```
+
 ## How to Use:
 1. Select a sorting algorithm from the dropdown menu.
 2. Use the control panel to adjust the speed or data size.
