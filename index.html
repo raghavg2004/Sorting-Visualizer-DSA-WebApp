@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorting Visualizer</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <ul>
         <li><a href="Algorithms.html">Algorithms</a></li>
         <li><a href="NetworkFlow.html">NetworkFlow</a></li>
+        <li>
+            <a id="themeToggle" class="theme-toggle">
+                <img id="themeIcon" src="themes.png" alt="Toggle Theme" width="24" height="24"></a>
+        </li>
     </ul>
 
     <header>
@@ -72,7 +80,7 @@
     </section>
 
     <footer>
-        <h6><p>&#169; 2024 Raghav Gupta. All rights reserved.</p></h6>
+        <h6><p>&#169; 2025 Raghav Gupta. All rights reserved.</p></h6>
     </footer>
 
     <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
@@ -84,5 +92,28 @@
     <script src="./scripts/merge_sort.js"></script>
     <script src="./scripts/quick_sort.js"></script>
     <script src="./scripts/heap_sort.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const themeToggle = document.getElementById("themeToggle");
+            const themeIcon = document.getElementById("themeIcon");
+            const body = document.body;
+          
+            // Check and set initial theme
+            const currentTheme = localStorage.getItem("theme") || "light";
+            body.classList.toggle("dark-mode", currentTheme === "dark");
+            themeIcon.src = currentTheme === "dark" ? "themes.png" : "themes.png";
+          
+            // Add event listener for theme toggle
+            themeToggle.addEventListener("click", () => {
+              const isDarkMode = body.classList.toggle("dark-mode");
+              themeIcon.src = isDarkMode ? "themes.png" : "themes.png";
+              localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+          
+              // Add or remove active class for visual effect
+              themeToggle.classList.toggle("active", isDarkMode);
+            });
+          });
+          
+    </script>
 </body>
 </html>
