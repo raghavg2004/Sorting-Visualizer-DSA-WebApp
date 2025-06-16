@@ -1,0 +1,62 @@
+/* Light Theme */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #090c10;
+    --success-color: #2ecc71;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    
+    --text-color: #333;
+    --text-inverse: #f5f5f5;
+    --bg-color: #fffdd0;
+    --bg-secondary: #ffffff;
+    --card-color: #ffffff;
+    --border-color: #ddd;
+}
+
+/* Dark Theme (Default)*/
+[data-theme="dark"] {
+    --primary-color: #3498db;
+    --secondary-color: #2980b9;
+    --accent-color: #e74c3c;
+    --light-color: #34495e;
+    --dark-color: #2c3e50;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    
+    --text-color: #f5f5f5;
+    --text-inverse: #333;
+    --bg-color: #f5f5e6;
+    --bg-secondary: #2c3e50;
+    --card-color: #34495e;
+    --border-color: #444;
+}
+
+/* Theme Toggle Transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme-specific elements */
+body[data-theme="dark"] {
+
+    background-color: var(--light-color);
+    color: var(--text-inverse);
+}
+
+body[data-theme="dark"] .card,
+body[data-theme="dark"] .controls-panel,
+body[data-theme="dark"] .array-container,
+body[data-theme="dark"] .network-canvas {
+    background-color: var(--card-color);
+    color: var(--text-color);
+}
+
+body[data-theme="dark"] .btn.secondary {
+        background-color: var(--bg-color);
+    color: var(--text-color);
+}

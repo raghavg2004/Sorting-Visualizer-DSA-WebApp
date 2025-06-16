@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoFlow</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css">
+    <link rel="icon" href="assets/images/icon.png">
+</head>
+<body>
+    <header class="app-header">
+        <nav class="main-nav">
+            <div class="nav-brand">Sorting Algorithms</div>
+            <ul class="nav-links">
+                <li><a href="sorting.html">Visualizer</a></li>
+                <li><a href="network-flow.html">Network Flow</a></li>
+                <li><a href="index.html">Maze Solver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="algorithms-container">
+        <section class="algorithm-selector">
+            <div class="algorithm-tabs">
+                <button class="algorithm-tab active" data-algorithm="bubble">Bubble Sort</button>
+                <button class="algorithm-tab" data-algorithm="selection">Selection Sort</button>
+                <button class="algorithm-tab" data-algorithm="insertion">Insertion Sort</button>
+                <button class="algorithm-tab" data-algorithm="merge">Merge Sort</button>
+                <button class="algorithm-tab" data-algorithm="quick">Quick Sort</button>
+                <button class="algorithm-tab" data-algorithm="heap">Heap Sort</button>
+            </div>
+        </section>
+
+        <section class="language-selector">
+            <div class="language-tabs">
+                <button class="language-tab" data-language="javascript">JavaScript</button>
+                <button class="language-tab " data-language="python">Python</button>
+                <button class="language-tab" data-language="java">Java</button>
+                <button class="language-tab active" data-language="cpp">C++</button>
+                <button class="language-tab" data-language="c">C</button>
+            </div>
+        </section>
+
+        <section class="code-display">
+            <pre><code id="codeContainer" class="language-javascript"></code></pre>
+        </section>
+
+        <section class="algorithm-info">
+            <div class="info-card">
+                <h3>Algorithm Description</h3>
+                <p id="algorithmDescription">Select an algorithm to view its description.</p>
+            </div>
+            
+            <div class="complexity-card">
+                <h3>Complexity Analysis</h3>
+                <div class="complexity-item">
+                    <span>Time (Worst):</span>
+                    <span id="algoTimeWorst">-</span>
+                </div>
+                <div class="complexity-item">
+                    <span>Time (Average):</span>
+                    <span id="algoTimeAverage">-</span>
+                </div>
+                <div class="complexity-item">
+                    <span>Time (Best):</span>
+                    <span id="algoTimeBest">-</span>
+                </div>
+                <div class="complexity-item">
+                    <span>Space:</span>
+                    <span id="algoSpaceWorst">-</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2025 AlgoFlow. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-cpp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>

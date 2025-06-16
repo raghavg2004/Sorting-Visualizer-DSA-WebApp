@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoFlow</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/themes.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="icon" href="assets/images/icon.png">
+</head>
+<body>
+    <header class="app-header">
+        <nav class="main-nav">
+            <div class="nav-brand">Sorting Visualizer</div>
+            <ul class="nav-links">
+                <li><a href="algorithms.html">Algorithms</a></li>
+                <li><a href="network-flow.html">Network Flow</a></li>
+                <li><a href="index.html">Maze Solver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="visualizer-container">
+        <section class="controls-panel">
+            <div class="control-group">
+                <label for="arraySize">Array Size</label>
+                <input type="range" id="arraySize" min="5" max="100" value="30">
+                <span id="arraySizeValue">30</span>
+            </div>
+            
+            <div class="control-group">
+                <label for="sortSpeed">Speed</label>
+                <input type="range" id="sortSpeed" min="1" max="5" value="3">
+                <span id="sortSpeedValue">Medium</span>
+            </div>
+            
+            <button id="generateArray" class="btn primary">Generate New Array</button>
+        </section>
+
+        <section class="algorithm-selector">
+            <h2>Sorting Algorithms</h2>
+            <div class="algorithm-buttons">
+                <button class="algorithm-btn" data-algorithm="bubble">Bubble Sort</button>
+                <button class="algorithm-btn" data-algorithm="selection">Selection Sort</button>
+                <button class="algorithm-btn" data-algorithm="insertion">Insertion Sort</button>
+                <button class="algorithm-btn" data-algorithm="merge">Merge Sort</button>
+                <button class="algorithm-btn" data-algorithm="quick">Quick Sort</button>
+                <button class="algorithm-btn" data-algorithm="heap">Heap Sort</button>
+            </div>
+        </section>
+
+        <section class="visualization-area">
+            <div id="arrayContainer" class="array-container"></div>
+        </section>
+
+        <section class="complexity-info">
+            <div class="complexity-card">
+                <h3>Time Complexity</h3>
+                <div class="complexity-item">
+                    <span>Worst Case:</span>
+                    <span id="timeWorst">-</span>
+                </div>
+                <div class="complexity-item">
+                    <span>Average Case:</span>
+                    <span id="timeAverage">-</span>
+                </div>
+                <div class="complexity-item">
+                    <span>Best Case:</span>
+                    <span id="timeBest">-</span>
+                </div>
+            </div>
+            
+            <div class="complexity-card">
+                <h3>Space Complexity</h3>
+                <div class="complexity-item">
+                    <span>Worst Case:</span>
+                    <span id="spaceWorst">-</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="app-footer">
+        <p>&copy; 2025 AlgoFlow. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>

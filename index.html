@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoFlow</title>
+    <link rel="stylesheet" href="assets/css/maze-solver.css">
+    <link rel="icon" href="assets/images/icon.png">
+</head>
+<body>
+    <header class="app-header">
+        <nav class="main-nav">
+            <div class="nav-brand">Maze Solver</div>
+            <ul class="nav-links">
+                <li><a href="sorting.html">Visualizer</a></li>
+                <li><a href="algorithms.html">Algorithms</a></li>
+                <li><a href="network-flow.html">Network Flow</a></li>
+            </ul>
+        </nav>
+    </header>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="algorithm">Algorithm:</label>
+                <select id="algorithm">
+                    <option value="bfs">Breadth-First Search (BFS)</option>
+                    <option value="dfs">Depth-First Search (DFS)</option>
+                    <option value="astar">A* Search</option>
+                    <option value="dijkstra">Dijkstra's Algorithm</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="maze-size">Maze Size:</label>
+                <select id="maze-size">
+                    <option value="10">10x10</option>
+                    <option value="15" selected>15x15</option>
+                    <option value="20">20x20</option>
+                    <option value="25">25x25</option>
+                </select>
+            </div>
+            
+            <button id="generate-btn">Generate Maze</button>
+            <button id="solve-btn">Solve Maze</button>
+            <button id="clear-btn">Clear Solution</button>
+        </div>
+        
+        <div class="maze-container">
+            <div id="maze"></div>
+        </div>
+        
+        <div class="stats">
+            <div>Visited Nodes: <span id="visited-count">0</span></div>
+            <div>Path Length: <span id="path-length">0</span></div>
+            <div>Time: <span id="time">0</span> ms</div>
+        </div>
+        
+        <div class="instructions">
+            <h3>Instructions:</h3>
+            <ul>
+                <li>Click "Generate Maze" to create a new random maze</li>
+                <li>Select an algorithm from the dropdown</li>
+                <li>Click "Solve Maze" to visualize the algorithm</li>
+                <li>Drag from start (green) or end (red) to move them</li>
+                <li>Click on walls to toggle them</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+        <p>&copy; 2025 AlgoFlow. All rights reserved.</p>
+    </footer>
+    
+    <script src="assets/js/maze-solver.js"></script>
+</body>
+</html>
